@@ -1,2 +1,4 @@
-# Laurea_R0244_Verkkosivujen_kehittaminen_Syksy_2024
-Laurea Verkkosivujen kehittäminen Tikkurila Syksy 2024
+# Verkkosivujen Kehittäminen - Opintojakson Työkansio
+
+Tämä on opintojakson R0244 työkansio, jossa kehitetään verkkosivuja vuodelle 2024.
+
