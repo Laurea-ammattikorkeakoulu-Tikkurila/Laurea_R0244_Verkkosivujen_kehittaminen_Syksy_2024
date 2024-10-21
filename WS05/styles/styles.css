@@ -1,0 +1,17 @@
+header,
+footer {
+  padding: 1em;
+  color: white;
+  background-color: #000080;
+  clear: left;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper > div {
+  flex: 1;
+  text-align: center;
+}
