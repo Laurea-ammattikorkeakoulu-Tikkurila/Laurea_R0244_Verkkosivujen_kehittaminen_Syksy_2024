@@ -1,1 +1,1 @@
-WS06 workshop
+WS06 workshoppi
