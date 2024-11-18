@@ -1,12 +1,10 @@
-#tausta {
-  background-color: #f8f3f3;
-  background-image: url("https://www.worldsquash.org/wp-content/uploads/2024/10/0I8A3955-780x470.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Some custom styles to beautify this example */
+.main-content {
+  min-height: 230px;
+  background: #dbdfe5;
+}
+.sidebar-content {
+  min-height: 100px;
+  margin-bottom: 30px;
+  background: #b4bac0;
 }
