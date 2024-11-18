@@ -59,6 +59,30 @@ nav a:focus {
   color: hsla(0, 0%, 20%, 0.6);
 }
 
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.left-side {
+  grid-column: 1 / 2;
+  padding: 5px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
+.keski-osa {
+  grid-column: 2 / 3;
+  padding: 5px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
+.right-side {
+  grid-column: 3 / 4;
+  padding: 5px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
 main {
   flex-grow: 1;
   display: flex;
