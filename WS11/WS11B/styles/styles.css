@@ -1,0 +1,121 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  background-image: url("../images/taustakuva.webp");
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "nav aside"
+    "footer footer";
+  grid-gap: 10px;
+}
+
+header {
+  grid-area: header;
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+nav {
+  grid-area: nav;
+  background: lightgreen;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+main {
+  grid-area: main;
+  background: lightcoral;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+aside {
+  grid-area: aside;
+  background: lightgoldenrodyellow;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  grid-area: footer;
+  background: lightgray;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.task {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.task p {
+  margin: 10px 0;
+}
+
+.task p strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+/* Media Queries */
+/* Task 1: Change Layout for Small Screens */
+@media (min-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header header header"
+      "nav main aside"
+      "footer footer footer";
+  }
+}
+/* Task: Change Header Background Color for Different Screen Sizes */
+@media (max-width: 600px) {
+  header {
+    background-color: lightblue;
+  }
+  body {
+    background-image: none;
+  }
+  footer {
+    background-color: black;
+    color: white;
+  }
+}
+/* Change aside not visible and change background Color*/
+@media (min-width: 600px) and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+  header {
+    background-color: lightgreen;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    background-color: lightcoral;
+  }
+}
+
+/* Task 2: Adjust Font Size for Large Screens */
+@media (min-width: 1200px) {
+  main {
+    font-size: 1.5em;
+  }
+}
